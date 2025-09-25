@@ -14,7 +14,23 @@ Hint: if you have used nested loops, try to simplify your solution! A single loo
 
 int main()
 {
+    int N = 20;
 
+    float e = 1;
 
+    float one = 1;
+    
+    long long factorial = 1;
 
+    for (int i = 1; i <= N; i++)
+    {
+        factorial= factorial * i;
+
+        printf("%lld\n", factorial);
+
+        e = one/factorial + e;
+
+    }
+    
+    printf("E equals to: %.7f\n", e);
 }

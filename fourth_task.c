@@ -12,6 +12,21 @@ Identify the repeating pattern in the formula, and write a program to evaluate i
 
 int main(){
 
+    int input;
+
+    float firstPart = 1.0;
+    
+
+    printf("Type in any integer number: ");
+    scanf("%d", &input);
+
+    for (float i = 2.0; i <= input; i=i+2.0)
+    {
+        firstPart *=(i*i)/((i-1.0)*(i+1.0));
+    }
+    
+    float secondPart = firstPart*2.0;
+    printf("Pi is: %f", secondPart);
 
 return 0;
 }

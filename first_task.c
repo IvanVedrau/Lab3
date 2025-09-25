@@ -17,5 +17,14 @@ Print the pruduct.*/
 int main(){
 
 
+    long long factorial = 1;
+    int N = 10;
+
+    for (int i = 1; i <= N; i++)
+    {
+        factorial = factorial * i;
+        printf("%lld\n", factorial);
+    }
+    
 
 }
