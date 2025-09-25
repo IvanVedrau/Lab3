@@ -21,15 +21,15 @@ int main()
 
 int input;
 
-    float firstPart = 1.0;
+    float firstPart = 0.0;
     
 
     printf("Type in any integer number: ");
     scanf("%d", &input);
 
-    for (float i = 1.0; i <= input; i=i+2.0)
+    for (float i = 1.0; i <= input; i=i+4.0)
     {
-        firstPart +=((1.0/i)-(1/(i+2)));
+        firstPart +=((1.0/i)-(1.0/(i+2.0)));
     }
     
     float secondPart = firstPart*4.0;
